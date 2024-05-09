@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply - Dashboard</title>
+    <link rel="stylesheet" href="./assets/simply.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header
+        class="header width-full px-1 md-px-2 bg-main-dark color-grey-light flex justify-between items-center relative height-60px fixed top left width-full z-index-8">
+        <div class="nav-left">
+            <h1 class="font-large bold"><a href="./dashboard.html">Simply</a></h1>
+        </div>
+        <div class="nav-right md-flex md-items-center md-gap-1 height-40px">
+            <form action="#" class="hidden md-flex round-5px">
+                <input type="search" class="round-0" placeholder="Search...">
+                <button type="submit" class="color-dark round-0 bg-main color-grey-light"><svg
+                        enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewBox="0 0 32 32"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path
+                            d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+                            fill="currentColor" id="XMLID_223_"></path>
+                    </svg></button>
+            </form>
+            <div id="collapse" class="collapse cursor-pointer md-hidden absolute right-2"><svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M20 5V2H0v3h20zm0 6V8H0v3h20zm0 6v-3H0v3h20z' fill='currentColor'></path></svg></div>
+            <div class="dropdown flex items-center gap-s cursor-pointer mr-4 md-mg-0">
+                <img class="width-40px round" src="./images/user.png" alt="">
+                <span>Admin</span>
+                <ul
+                    class="dropdown-content absolute top-full right-2 bg-main-dark width-200px max-height-0 transition-ease">
+                    <li><a href="#" class="block py-s px-1">Profile</a></li>
+                    <li><a href="#" class="block py-s px-1">Settings</a></li>
+                    <li><a href="#" class="block pt-s pb-1 px-1 pb-1">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Top Header -->
+
+    <!-- Side Nav -->
+    <nav class="nav fixed top-60px left-ng-full md-left bg-main-dark color-grey-light width-250px height-full px-1 z-index-9 transition-ease">
+        <ul>
+            <li><a href="./dashboard.html" class="block pd-1">Dashboard</a></li>
+            <li><a href="./posts.html" class="block pd-1">Posts</a></li>
+            <li><a href="./add-post.html" class="block pd-1">Add Post</a></li>
+            <li><a href="./categories.html" class="block pd-1">Categories</a></li>
+            <li><a href="./comments.html" class="block pd-1">Comments</a></li>
+            <li><a href="./comments.html" class="block pd-1">Logout</a></li>
+        </ul>
+    </nav>
+    <!-- Side Nav -->
+
+    <main class="main relative top-60px pd-1 md-px-2">
+
+        <div class="h1 fw-700">All Posts</div>
+
+        <table class="table-main-dark table-even-bg width-full mt-1 bg-light">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Thumbnail</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/1.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/2.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/3.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/4.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/5.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/6.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px" src="./images/7.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+                <tr>
+                    <td>How to delete facebook account permanently</td>
+                    <td><img class="width-70px height-50px"src="./images/8.jpg" alt=""></td>
+                    <td>how to</td>
+                    <td><a href="#" class="info">edit</a> <a href="#" class="danger">delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

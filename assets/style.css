@@ -1,0 +1,23 @@
+:root{
+    --body-bg: #f3f7f9;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+.collapse{
+    top: 1.2em;
+}
+textarea.content{
+    min-height: 15rem;
+}
+@media only screen and (min-width: 976px){
+
+}
+@media only screen and (min-width: 768px){
+    .main{
+        margin-left: 250px;
+    }
+}
+@media only screen and (min-width: 976px){
+
+}
