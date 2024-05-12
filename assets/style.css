@@ -1,14 +1,21 @@
 :root{
-    --body-bg: #f3f7f9;
+    --body-bg: #f3f5f7;
 }
 body{
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .collapse{
     top: 1.2em;
 }
 textarea.content{
     min-height: 15rem;
+}
+.nav a:hover{
+    background: var(--grey-light);
+    color: inherit;
+}
+.btns button{
+    margin: 0 .5em .5em 0;
 }
 @media only screen and (min-width: 976px){
 

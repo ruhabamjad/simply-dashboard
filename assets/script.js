@@ -5,7 +5,7 @@ let nav = document.querySelector(".nav");
 dropdownBtns.forEach((dropdownBtn) => {
         let dropdownContent = dropdownBtn.querySelector(".dropdown-content");
         dropdownBtn.addEventListener("click", (e) => {
-        dropdownContent.classList.toggle("max-height-400px");
+        dropdownContent.classList.toggle("block");
     });
 });
 

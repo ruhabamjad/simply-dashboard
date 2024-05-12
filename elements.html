@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply - Dashboard</title>
+    <link rel="stylesheet" href="./assets/simply.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./fonts/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header
+        class="header border-bottom width-full px-1 md-px-2 bg-light flex justify-between items-center relative height-60px fixed top left width-full z-index-8">
+        <div class="nav-left">
+            <h1 class="font-large bold"><a href="./index.html">Simply</a></h1>
+        </div>
+        <div class="nav-right md-flex md-items-center md-gap-1 height-40px">
+            <form action="#" class="hidden md-flex round-5px">
+                <input type="search" class="round-top-right-0 round-bottom-right-0 pd-s" placeholder="Search...">
+                <button type="submit" class="color-dark round-0 bg-main color-grey-light"><i
+                        class="fa fa-search"></i></button>
+            </form>
+            <div id="collapse" class="collapse cursor-pointer md-hidden absolute right-2"><i class="fa fa-bars"></i>
+            </div>
+            <div class="dropdown flex items-center gap-s cursor-pointer mr-4 md-mg-0">
+                <img class="width-40px round" src="./images/user.png" alt="">
+                <span>Admin</span>
+                <ul
+                    class="dropdown-content absolute top-full right-m bg-light width-200px hidden border transition-ease">
+                    <li><a href="#" class="block py-s px-1">Profile</a></li>
+                    <li><a href="#" class="block py-s px-1">Settings</a></li>
+                    <li><a href="#" class="block pt-s pb-1 px-1 pb-1">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Top Header -->
+
+    <!-- Side Nav -->
+    <nav
+        class="nav border-right fixed top-60px left-ng-full md-left bg-light width-250px height-full z-index-9 transition-ease">
+        <ul>
+            <li><a href="./index.html" class="block py-1 px-2"><i class="fa fa-dashboard mr-1"></i>Dashboard</a></li>
+            <li><a href="./posts.html" class="block py-1 px-2"><i class="fa fa-edit mr-1"></i>Posts</a></li>
+            <li><a href="./add-post.html" class="block py-1 px-2"><i class="fa fa-plus mr-1"></i>Add Post</a></li>
+            <li><a href="./comments.html" class="block py-1 px-2"><i class="fa fa-comment mr-1"></i>Comments</a></li>
+            <li><a href="./categories.html" class="block py-1 px-2"><i class="fa fa-tags mr-1"></i>Categories</a></li>
+            <li><a href="./elements.html" class="block py-1 px-2"><i class="fa fa-chevron-right mr-1"></i>UI Elements</a></li>
+            <li><a href="./login.html" class="block py-1 px-2"><i class="fa fa-sign-in mr-1"></i>Login</a></li>
+            <li><a href="./signup.html" class="block py-1 px-2"><i class="fa fa-sign-in mr-1"></i>Signup</a></li>
+            <li><a href="./logout.html" class="block py-1 px-2"><i class="fa fa-sign-out mr-1"></i>Logout</a></li>
+        </ul>
+    </nav>
+    <!-- Side Nav -->
+
+    <main class="main relative top-60px pd-1 md-px-2">
+
+        <div class="card">
+
+        <div class="md-flex md-justify-between">
+            <div class="md-width-45">
+                
+                <h3>Login Form</h3>
+                <form action="#" class="bg-light pd-m mt-2 border round-5px">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email..." id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password..." id="password">
+                    </div>
+                    <button class="bg-main color-light">Login</button>
+                </form>
+                <hr>
+                <form action="#" class="hidden md-flex round-5px">
+                    <input type="search" class="round-top-right-0 round-bottom-right-0 pd-s" placeholder="Search...">
+                    <button type="submit" class="color-dark round-0 bg-main color-grey-light"><i
+                            class="fa fa-search"></i></button>
+                </form>
+
+                <div class="btns">
+                <div class="h2 my-s">Buttons</div>
+                <button>Button</button>
+                <button class="btn-main">Button</button>
+                <button class="btn-main-dark">Button</button>
+                <button class="btn-main-light">Button</button>
+                <button class="btn-dark">Button</button>
+                <button class="btn-black">Button</button>
+                <button class="btn-danger">Button</button>
+                <button class="btn-info">Button</button>
+                <button class="btn-warning">Button</button>
+                <button class="btn-success">Button</button>
+            </div>
+
+            </div>
+            <div class="md-width-45">
+
+                <h3>Signup Form</h3>
+                <form action="#" class="bg-light pd-m mt-2 border round-5px">
+                    <div class="form-group mt-1">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name..." id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email..." id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password..." id="password">
+                    </div>
+                    <button class="bg-main color-light">Signup</button>
+                </form>
+
+                <div class="btns mt-2">
+                <button class="btn-outline">Button</button>
+                <button class="btn-outline-main">Button</button>
+                <button class="btn-outline-main-dark">Button</button>
+                <button class="btn-outline-black">Button</button>
+                <button class="btn-outline-dark">Button</button>
+                <button class="btn-outline-grey">Button</button>
+                <button class="btn-outline-danger">Button</button>
+                <button class="btn-outline-success">Button</button>
+                <button class="btn-outline-info">Button</button>
+                <button class="btn-outline-warning">Button</button>
+                </div>
+
+            </div>
+        </div>
+        
+        <h2 class="my-s">Alerts</h2>
+        <div class="alert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, natus.</div>
+        <div class="alert alert-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque optio minus voluptatem.</div>
+        <div class="alert alert-danger">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque optio minus voluptatem.</div>
+        <div class="alert alert-warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque optio minus voluptatem.</div>
+        <div class="alert alert-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque optio minus voluptatem.</div>
+
+        <h2 class="my-s">Tables</h2>
+
+        <table>
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-main mt-2">
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-black mt-2">
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table-border-tr mt-2">
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr><tr>
+                    <td>1</td>
+                    <td>Title 1</td>
+                    <td>Description 1</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="mt-s">Blockquote</h2>
+        
+        <blockquote class="mt-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem quod omnis maiores fugit voluptates provident perspiciatis nemo rem dolore possimus, suscipit repudiandae hic quasi delectus, neque aliquam fugiat reiciendis!
+        </blockquote>
+        <h2 class="mt-s">Select Box</h2>
+        
+        <select class="mt-1">
+            <option>Select Option</option>
+            <option>Faisalabad</option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Islamabad</option>
+        </select>
+
+        <h2 class="mt-s">Lists</h2>
+        <ol class="ml-2 list-decimal mt-1">
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+        </ol>
+        <ul class="ml-2 list-disc mt-1">
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+            <li><a href="#">Ordered Item</a></li>
+        </ul>
+
+    </div>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

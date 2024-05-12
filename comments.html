@@ -7,33 +7,29 @@
     <title>Simply - Dashboard</title>
     <link rel="stylesheet" href="./assets/simply.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./fonts/css/all.min.css">
 </head>
 
 <body>
     <!-- Top Header -->
     <header
-        class="header width-full px-1 md-px-2 bg-main-dark color-grey-light flex justify-between items-center relative height-60px fixed top left width-full z-index-8">
+        class="header border-bottom width-full px-1 md-px-2 bg-light flex justify-between items-center relative height-60px fixed top left width-full z-index-8">
         <div class="nav-left">
-            <h1 class="font-large bold"><a href="./dashboard.html">Simply</a></h1>
+            <h1 class="font-large bold"><a href="./index.html">Simply</a></h1>
         </div>
         <div class="nav-right md-flex md-items-center md-gap-1 height-40px">
             <form action="#" class="hidden md-flex round-5px">
-                <input type="search" class="round-0" placeholder="Search...">
-                <button type="submit" class="color-dark round-0 bg-main color-grey-light"><svg
-                        enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewBox="0 0 32 32"
-                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path
-                            d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
-                            fill="currentColor" id="XMLID_223_"></path>
-                    </svg></button>
+                <input type="search" class="round-top-right-0 round-bottom-right-0 pd-s" placeholder="Search...">
+                <button type="submit" class="color-dark round-0 bg-main color-grey-light"><i
+                        class="fa fa-search"></i></button>
             </form>
-            <div id="collapse" class="collapse cursor-pointer md-hidden absolute right-2"><svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M20 5V2H0v3h20zm0 6V8H0v3h20zm0 6v-3H0v3h20z' fill='currentColor'></path></svg></div>
+            <div id="collapse" class="collapse cursor-pointer md-hidden absolute right-2"><i class="fa fa-bars"></i>
+            </div>
             <div class="dropdown flex items-center gap-s cursor-pointer mr-4 md-mg-0">
                 <img class="width-40px round" src="./images/user.png" alt="">
                 <span>Admin</span>
                 <ul
-                    class="dropdown-content absolute top-full right-2 bg-main-dark width-200px max-height-0 transition-ease">
+                    class="dropdown-content absolute top-full right-m bg-light width-200px hidden border transition-ease">
                     <li><a href="#" class="block py-s px-1">Profile</a></li>
                     <li><a href="#" class="block py-s px-1">Settings</a></li>
                     <li><a href="#" class="block pt-s pb-1 px-1 pb-1">Logout</a></li>
@@ -44,27 +40,31 @@
     <!-- Top Header -->
 
     <!-- Side Nav -->
-    <nav class="nav fixed top-60px left-ng-full md-left bg-main-dark color-grey-light width-250px height-full px-1 z-index-9 transition-ease">
-        <ul>
-            <li><a href="./dashboard.html" class="block pd-1">Dashboard</a></li>
-            <li><a href="./posts.html" class="block pd-1">Posts</a></li>
-            <li><a href="./add-post.html" class="block pd-1">Add Post</a></li>
-            <li><a href="./categories.html" class="block pd-1">Categories</a></li>
-            <li><a href="./comments.html" class="block pd-1">Comments</a></li>
-            <li><a href="./comments.html" class="block pd-1">Logout</a></li>
-        </ul>
-    </nav>
+    <nav
+    class="nav border-right fixed top-60px left-ng-full md-left bg-light width-250px height-full z-index-9 transition-ease">
+    <ul>
+        <li><a href="./index.html" class="block py-1 px-2"><i class="fa fa-dashboard mr-1"></i>Dashboard</a></li>
+        <li><a href="./posts.html" class="block py-1 px-2"><i class="fa fa-edit mr-1"></i>Posts</a></li>
+        <li><a href="./add-post.html" class="block py-1 px-2"><i class="fa fa-plus mr-1"></i>Add Post</a></li>
+        <li><a href="./comments.html" class="block py-1 px-2"><i class="fa fa-comment mr-1"></i>Comments</a></li>
+        <li><a href="./categories.html" class="block py-1 px-2"><i class="fa fa-tags mr-1"></i>Categories</a></li>
+        <li><a href="./elements.html" class="block py-1 px-2"><i class="fa fa-chevron-right mr-1"></i>UI Elements</a></li>
+        <li><a href="./login.html" class="block py-1 px-2"><i class="fa fa-sign-in mr-1"></i>Login</a></li>
+        <li><a href="./signup.html" class="block py-1 px-2"><i class="fa fa-sign-in mr-1"></i>Signup</a></li>
+        <li><a href="./logout.html" class="block py-1 px-2"><i class="fa fa-sign-out mr-1"></i>Logout</a></li>
+    </ul>
+</nav>
     <!-- Side Nav -->
 
     <main class="main relative top-60px pd-1 md-px-2">
 
-        <div class="h1 fw-700">All Comments</div>
+        <div class="h1 fw-700">Comments</div>
 
         <div class="card mt-2">
-            <table class="table-main-dark width-full table-even-bg">
+            <table class="table-border-tr">
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>Author</th>
                         <th>Comment</th>
                         <th>Actions</th>
                     </tr>
@@ -73,42 +73,42 @@
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                     <tr>
                         <td>Ruhab Amjad</td>
                         <td>Very nice blog, i woul'd love to see more posts like this.</td>
-                        <td><a href="#">edit</a> - <a href="#">delete</a></td>
+                        <td><a href="#" class="btn btn-info font-sm">edit</a> <a href="#" class="btn btn-danger font-sm">delete</a></td>
                     </tr>
                 </tbody>
             </table>
